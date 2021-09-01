@@ -1,0 +1,133 @@
+.sidebar__expanded{
+    margin-right: $widthside;
+}
+
+#sidemenu{
+    background-color: $bgcolorside;
+    color: rgb(112, 102, 102);
+    position: absolute;
+    height: 97.5%;
+    width: 400px;
+}
+
+#sidemenu a{
+    color: white;
+    text-decoration: none;
+}
+
+// Header
+
+#sidemenu #header{
+    box-sizing: border-box;
+    border-bottom: solid 1px $hovercolor;
+}
+#sidemenu #header #title{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#sidemenu #header #title, #sidemenu #header #menu-btn{
+    vertical-align: middle;
+}
+#sidemenu #header #menu-btn{
+    display: inline-block;
+}
+#sidemenu #header #menu-btn{
+    float: right;
+    cursor: pointer;
+    padding: 10px;
+    width: $width-collapse-side;
+    box-sizing: border-box;
+    &:hover{
+        background-color: $hovercolor;
+    }
+}
+#sidemenu #header #menu-btn .sidebar__btn-hamburger{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+// Profile
+#sidemenu #profile{
+    border-bottom: solid 1px $hovercolor;
+    padding: $paddingside 0;
+    text-align: center;
+}
+#sidemenu #profile #name{
+    font-size: 24px;
+    padding: $paddingside;
+    overflow: hidden;
+}
+
+// Item
+#sidemenu #menu-items{
+    overflow: hidden;
+}
+#sidemenu #menu-items .sidebar__item{
+    width: $widthside;
+}
+#sidemenu #menu-items .sidebar__item .sidebar__icon{
+    display: inline-block;
+}
+#sidemenu #menu-items .sidebar__item .sidebar__icon, #sidemenu #menu-items .sidebar__item .sidebar__title{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+#sidemenu #menu-items .sidebar__item a {
+    display: block;
+    &:hover{
+        background-color: $hovercolor;
+    }
+}
+#sidemenu #menu-items .sidebar__item .sidebar__title{
+    padding: $paddingside 0;
+    padding-left: $paddingside;
+}
+#sidemenu #menu-items .sidebar__item.sidebar__separator{
+    height: 1px;
+    border-bottom: solid 1px $hovercolor;
+    margin: 15px 0;
+}
+
+.sidebar__menu-expanded{
+    width: $widthside;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.sidebar__menu-expanded #header #title{
+    display: inline-block;
+    width: calc(100%-50px);
+    margin-right: -5px;
+    padding: $paddingside;
+}
+.sidebar__menu-expanded #header #title span{
+    width: calc($widthside - $width-collapse-side - 5px);
+    overflow: hidden;
+    display: inline-block;
+}
+.sidebar__menu-expanded #profile #name{
+    width: 100%;
+}
+.sidebar__menu-collapsed{
+    width: $width-collapse-side !important;
+}
+.sidebar__menu-collapsed #header #title{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+.sidebar__menu-collapsed #profile #name{
+    display: none;
+}
+.sidebar__menu-collapsed #menu-items .sidebar__item{
+    width: $width-collapse-side !important;
+}
+.sidebar__menu-collapsed #menu-items .sidebar__item .sidebar__title{
+    display: none !important;
+}
+.sidebar__menu-collapsed #sidemenu #profile{
+    border: 0 !important;
+}

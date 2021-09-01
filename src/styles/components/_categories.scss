@@ -1,0 +1,23 @@
+.categories__categories{
+    text-align: center;
+}
+.categories__categories li{
+    position: flex;
+    display: inline;
+    padding: 1%;
+}
+.categories__icon{
+    display: inline;
+    padding: 1px;
+    margin-left: 3px;
+    color: $red;
+}
+
+.categories__list a{
+    text-decoration: none;
+    color: black;
+    transition: color .3s ease;
+    &:hover{
+        color: lighten($color: black, $amount: 30);
+    }
+}

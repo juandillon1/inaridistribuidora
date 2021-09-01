@@ -1,0 +1,23 @@
+// Principal
+@import './base/settings';
+@import './base/base';
+// NavBar
+@import './components/redes';
+@import './components/nav';
+@import './components/categories';
+// Body
+@import './components/carousel';
+@import './components/topproducts';
+@import './components/card';
+@import './components/sidebar';
+@import './components/sushiscreen';
+// Footer
+@import './components/footer';
+@import './components/formfooter';
+
+
+// Fuentes
+@font-face {
+    font-family: 'Lora';
+    src: url('../assets/fonts/Lora.ttf');
+}

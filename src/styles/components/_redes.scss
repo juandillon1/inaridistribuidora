@@ -1,0 +1,46 @@
+.redes__smallnav{
+    background-color: darken($primary, 5);
+    width: 100%;
+    margin-left: 0;
+}
+.redes__iconos{
+    padding: 10px;
+    color: $icons;
+}
+.redes__instagram{
+    margin-left: 2%;
+    transition: color .3s ease;
+    &:hover{
+        color: darken($color: white, $amount: 10);
+    }
+}
+.redes__facebook{
+    margin-left: 2%;
+    transition: color .3s ease;
+    &:hover{
+        color: darken($color: white, $amount: 10);
+    }
+}
+.redes__tiktok{
+    margin-left: 2%;
+    transition: color .3s ease;
+    &:hover{
+        color: darken($color: white, $amount: 10);
+    }
+}
+.redes__titulo{
+    color: $icons;
+    font-size: inherit;
+    position: absolute;
+    right: 40%;
+    padding: 10px;
+}
+.redes__mail{
+    color: $icons;
+    text-decoration: none;
+    transition: color .3s ease;
+    &:hover{
+        color: darken($color: $icons, $amount: 20);
+        text-decoration: underline;
+    }
+}

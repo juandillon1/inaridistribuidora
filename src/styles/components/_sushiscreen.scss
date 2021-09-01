@@ -1,0 +1,23 @@
+.sushiscreen__container{
+    display: inline-flex;
+}
+
+.sushiscreen__row{
+    position: relative;
+    left: 730px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sushiscreen__column {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 400px;
+    height: auto;
+    flex: auto 1 auto;
+}
